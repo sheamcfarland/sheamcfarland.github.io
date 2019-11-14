@@ -27,7 +27,7 @@ phonebox.onclick = function() {
   if (phonebox.checked == true){
     document.getElementById('phonelinklabel').style.display = "inline"
     document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
-    document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
+    document.getElementById('phonelink').innerText = document.getElementById('phone')
     } else {
       document.getElementById('phonelink').innerText = ""
       document.getElementById('phonelinklabel').style.display = "none"
@@ -38,7 +38,7 @@ mobilebox.onclick = function() {
   if (mobilebox.checked == true){
     document.getElementById('mobilelinklabel').style.display = "inline"
     document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
-    document.getElementById('mobilelink').innerText = document.getElementById('mobile').placeholder
+    document.getElementById('mobilelink').innerText = document.getElementById('mobile')
     } else {
       document.getElementById('mobilelink').innerText = ""
       document.getElementById('mobilelinklabel').style.display = "none"
