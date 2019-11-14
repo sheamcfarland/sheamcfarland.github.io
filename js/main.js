@@ -30,8 +30,8 @@ phonebox.onclick = function() {
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
       } else {
-        document.getElementById('phonelink').href = "tel:" + document.getElementById('phone')
-        document.getElementById('phonelink').innerText = document.getElementById('phone')
+        document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').value
+        document.getElementById('phonelink').innerText = document.getElementById('phone').value
       }
     } else {
       document.getElementById('phonelink').innerText = ""
@@ -42,8 +42,13 @@ phonebox.onclick = function() {
 mobilebox.onclick = function() {
   if (mobilebox.checked == true){
     document.getElementById('mobilelinklabel').style.display = "inline"
-    document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile')
-    document.getElementById('mobilelink').innerText = document.getElementById('mobile')
+    if (document.getElementById('mobile').value == ""){
+        document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
+        document.getElementById('mobilelink').innerText = document.getElementById('mobile').placeholder
+      } else {
+        document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').value
+        document.getElementById('mobilelink').innerText = document.getElementById('mobile').value
+      }
     } else {
       document.getElementById('mobilelink').innerText = ""
       document.getElementById('mobilelinklabel').style.display = "none"
