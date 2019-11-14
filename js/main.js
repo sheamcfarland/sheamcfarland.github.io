@@ -16,8 +16,13 @@ document.getElementsByClassName("primary")[0].onclick = function(e) {
 // Inizitalice signature
 document.getElementsByTagName('td')[2].innerText = document.getElementById('name').placeholder
 document.getElementsByTagName('td')[3].innerText = document.getElementById('title').placeholder
-  document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
-  document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
+document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
+document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
+document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
+document.getElementById('mobilelinklabel').style.display = "none"
+document.getElementById('mobilelink').innerText = ""
+document.getElementById('email-signature').href = "mailto:" + document.getElementById('email').placeholder
+document.getElementById('email-signature').innerText = document.getElementById('email').placeholder
 
 phonebox.onclick = function() {
   if (phonebox.checked == true){
@@ -29,8 +34,6 @@ phonebox.onclick = function() {
       document.getElementById('phonelinklabel').style.display = "none"
     }
   }
-    document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
-    document.getElementById('mobilelink').innerText = document.getElementById('mobile').placeholder
 
 mobilebox.onclick = function() {
   if (mobilebox.checked == true){
@@ -42,8 +45,7 @@ mobilebox.onclick = function() {
       document.getElementById('mobilelinklabel').style.display = "none"
     }
   }
-document.getElementById('email-signature').href = "mailto:" + document.getElementById('email').placeholder
-document.getElementById('email-signature').innerText = document.getElementById('email').placeholder
+
 
 // Set signature with key press
 var timerHandle = false; // global!
