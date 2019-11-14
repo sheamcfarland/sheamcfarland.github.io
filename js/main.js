@@ -18,9 +18,8 @@ document.getElementsByTagName('td')[2].innerText = document.getElementById('name
 document.getElementsByTagName('td')[3].innerText = document.getElementById('title').placeholder
 document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
 document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
-document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
-document.getElementById('mobilelinklabel').style.display = "none"
 document.getElementById('mobilelink').innerText = ""
+document.getElementById('mobilelinklabel').style.display = "none"
 document.getElementById('email-signature').href = "mailto:" + document.getElementById('email').placeholder
 document.getElementById('email-signature').innerText = document.getElementById('email').placeholder
 
