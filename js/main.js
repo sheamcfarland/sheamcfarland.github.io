@@ -16,14 +16,9 @@ document.getElementsByClassName("primary")[0].onclick = function(e) {
 // Inizitalice signature
 document.getElementsByTagName('td')[2].innerText = document.getElementById('name').placeholder
 document.getElementsByTagName('td')[3].innerText = document.getElementById('title').placeholder
-if (phonebox.checked == true){
-  document.getElementById('phonelinklabel').style.display = "inline"
   document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
   document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
-  } else {
-    document.getElementById('phonelink').innerText = ""
-    document.getElementById('phonelinklabel').style.display = "none"
-  }
+
 phonebox.onclick = function() {
   if (phonebox.checked == true){
     document.getElementById('phonelinklabel').style.display = "inline"
@@ -34,14 +29,9 @@ phonebox.onclick = function() {
       document.getElementById('phonelinklabel').style.display = "none"
     }
   }
-  if (mobilebox.checked == true){
-    document.getElementById('mobilelinklabel').style.display = "inline"
     document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
     document.getElementById('mobilelink').innerText = document.getElementById('mobile').placeholder
-    } else {
-      document.getElementById('mobilelink').innerText = ""
-      document.getElementById('mobilelinklabel').style.display = "none"
-    }
+
 mobilebox.onclick = function() {
   if (mobilebox.checked == true){
     document.getElementById('mobilelinklabel').style.display = "inline"
