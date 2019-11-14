@@ -26,7 +26,7 @@ document.getElementById('email-signature').innerText = document.getElementById('
 phonebox.onclick = function() {
   if (phonebox.checked == true){
     document.getElementById('phonelinklabel').style.display = "inline"
-    if (document.getElementById('phone').value == ){
+    if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
       } else {
