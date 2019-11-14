@@ -26,8 +26,13 @@ document.getElementById('email-signature').innerText = document.getElementById('
 phonebox.onclick = function() {
   if (phonebox.checked == true){
     document.getElementById('phonelinklabel').style.display = "inline"
-    document.getElementById('phonelink').href = "tel:" + document.getElementById('phone')
-    document.getElementById('phonelink').innerText = document.getElementById('phone')
+    if (document.getElementById('phone') == document.getElementById('phone').placeholder){
+        document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
+        document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
+      } else {
+        document.getElementById('phonelink').href = "tel:" + document.getElementById('phone')
+        document.getElementById('phonelink').innerText = document.getElementById('phone')
+      }
     } else {
       document.getElementById('phonelink').innerText = ""
       document.getElementById('phonelinklabel').style.display = "none"
