@@ -71,7 +71,7 @@ function setTimerPhone(what) {
 }
 function sendItOffPhone() {
     what = document.getElementById("phone").value;
-    document.getElementsByTagName('td')[4].innerText = what
+    document.getElementById('phonelink').innerText = what
 }
 
 function setTimerMobile(what) {
@@ -80,7 +80,7 @@ function setTimerMobile(what) {
 }
 function sendItOffMobile() {
     what = document.getElementById("mobile").value;
-    document.getElementsByTagName('td')[5].innerText = what
+    document.getElementById('mobilelink').innerText = what
 }
 
 function setTimerEmail(what) {
