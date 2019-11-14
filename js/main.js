@@ -26,7 +26,7 @@ document.getElementById('email-signature').innerText = document.getElementById('
 phonebox.onclick = function() {
   if (phonebox.checked == true){
     document.getElementById('phonelinklabel').style.display = "inline"
-    document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
+    document.getElementById('phonelink').href = "tel:" + document.getElementById('phone')
     document.getElementById('phonelink').innerText = document.getElementById('phone')
     } else {
       document.getElementById('phonelink').innerText = ""
@@ -37,7 +37,7 @@ phonebox.onclick = function() {
 mobilebox.onclick = function() {
   if (mobilebox.checked == true){
     document.getElementById('mobilelinklabel').style.display = "inline"
-    document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
+    document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile')
     document.getElementById('mobilelink').innerText = document.getElementById('mobile')
     } else {
       document.getElementById('mobilelink').innerText = ""
