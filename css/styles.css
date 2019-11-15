@@ -154,7 +154,7 @@ button:hover {
   text-align: center; }
 
 .generator {
-  width: 55rem;
+  width: 60rem;
   overflow: auto;
   margin: 0 auto 1rem auto;
   background-color: #fbfbfb;
@@ -162,7 +162,7 @@ button:hover {
   border-bottom: 1px solid #ccc; }
 
 .details {
-  width: 21rem;
+  width: 25rem;
   margin: 1rem;
   padding-right: 1rem;
   border-right: 1px solid #ccc;
@@ -176,7 +176,7 @@ button:hover {
 
 .preview {
   float: left;
-  width: 26rem;
+  width: 30rem;
   margin: 1rem 1rem 1rem -1px; }
 
 .brand {

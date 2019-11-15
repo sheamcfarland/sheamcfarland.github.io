@@ -1,6 +1,10 @@
 var phonebox = document.getElementById("phonebox");
 var mobilebox = document.getElementById("mobilebox");
-
+var facebookbox = document.getElementById("facebookbox");
+var linkedinbox = document.getElementById("linkedinbox");
+var twitterbox = document.getElementById("twitterbox");
+var xingbox = document.getElementById("xingbox");
+var youtubebox = document.getElementById("youtubebox");
 // Copy button
 document.getElementsByClassName("primary")[0].onclick = function(e) {
     var text = document.getElementsByClassName('signature')[0];
@@ -19,13 +23,23 @@ document.getElementsByTagName('td')[3].innerText = document.getElementById('titl
 document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
 document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
 document.getElementById('mobilelink').innerText = ""
-document.getElementById('mobilelinklabel').style.display = "none"
+document.getElementById('mobilecontainer').style.display = "none"
 document.getElementById('email-signature').href = "mailto:" + document.getElementById('email').placeholder
 document.getElementById('email-signature').innerText = document.getElementById('email').placeholder
+document.getElementById('facebooklink').href = ""
+document.getElementById('facebookcontainer').style.display = "none"
+document.getElementById('linkedinlink').href = ""
+document.getElementById('linkedincontainer').style.display = "none"
+document.getElementById('twitterlink').href = ""
+document.getElementById('twittercontainer').style.display = "none"
+document.getElementById('xinglink').href = ""
+document.getElementById('xingcontainer').style.display = "none"
+document.getElementById('youtubelink').href = ""
+document.getElementById('youtubecontainer').style.display = "none"
 
 phonebox.onclick = function() {
   if (phonebox.checked == true){
-    document.getElementById('phonelinklabel').style.display = "inline"
+    document.getElementById('phonecontainer').style.display = "inline"
     if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
@@ -35,13 +49,13 @@ phonebox.onclick = function() {
       }
     } else {
       document.getElementById('phonelink').innerText = ""
-      document.getElementById('phonelinklabel').style.display = "none"
+      document.getElementById('phonecontainer').style.display = "none"
     }
   }
 
 mobilebox.onclick = function() {
   if (mobilebox.checked == true){
-    document.getElementById('mobilelinklabel').style.display = "inline"
+    document.getElementById('mobilecontainer').style.display = "inline"
     if (document.getElementById('mobile').value == ""){
         document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
         document.getElementById('mobilelink').innerText = document.getElementById('mobile').placeholder
@@ -51,10 +65,75 @@ mobilebox.onclick = function() {
       }
     } else {
       document.getElementById('mobilelink').innerText = ""
-      document.getElementById('mobilelinklabel').style.display = "none"
+      document.getElementById('mobilecontainer').style.display = "none"
     }
   }
 
+  facebookbox.onclick = function() {
+    if (facebookbox.checked == true){
+      document.getElementById('facebookcontainer').style.display = "inline"
+      if (document.getElementById('facebook').value == ""){
+          document.getElementById('facebooklink').href = document.getElementById('facebook').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+        } else {
+          document.getElementById('facebooklink').href = document.getElementById('facebook').value + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+        }
+      } else {
+        document.getElementById('facebooklink').href = ""
+        document.getElementById('facebookcontainer').style.display = "none"
+      }
+    }
+    linkedinbox.onclick = function() {
+      if (linkedinbox.checked == true){
+        document.getElementById('linkedincontainer').style.display = "inline"
+        if (document.getElementById('linkedin').value == ""){
+            document.getElementById('linkedinlink').href = document.getElementById('linkedin').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+          } else {
+            document.getElementById('linkedinlink').href = document.getElementById('linkedin').value + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+          }
+        } else {
+          document.getElementById('linkedinlink').href = ""
+          document.getElementById('linkedincontainer').style.display = "none"
+        }
+      }
+      twitterbox.onclick = function() {
+        if (twitterbox.checked == true){
+          document.getElementById('twittercontainer').style.display = "inline"
+          if (document.getElementById('twitter').value == ""){
+              document.getElementById('twitterlink').href = document.getElementById('twitter').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+            } else {
+              document.getElementById('twitterlink').href = document.getElementById('twitter').value + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+            }
+          } else {
+            document.getElementById('twitterlink').href = ""
+            document.getElementById('twittercontainer').style.display = "none"
+          }
+        }
+        xingbox.onclick = function() {
+          if (xingbox.checked == true){
+            document.getElementById('xingcontainer').style.display = "inline"
+            if (document.getElementById('xing').value == ""){
+                document.getElementById('xinglink').href = document.getElementById('xing').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+              } else {
+                document.getElementById('xinglink').href = document.getElementById('xing').value + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+              }
+            } else {
+              document.getElementById('xinglink').href = ""
+              document.getElementById('xingcontainer').style.display = "none"
+            }
+          }
+          youtubebox.onclick = function() {
+            if (youtubebox.checked == true){
+              document.getElementById('youtubecontainer').style.display = "inline"
+              if (document.getElementById('youtube').value == ""){
+                  document.getElementById('youtubelink').href = document.getElementById('youtube').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+                } else {
+                  document.getElementById('youtubelink').href = document.getElementById('youtube').value + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+                }
+              } else {
+                document.getElementById('youtubelink').href = ""
+                document.getElementById('youtubecontainer').style.display = "none"
+              }
+            }
 
 // Set signature with key press
 var timerHandle = false; // global!
@@ -102,4 +181,46 @@ function sendItOffEmail() {
     what = document.getElementById("email").value;
     document.getElementById('email-signature').innerText = what
     document.getElementById('email-signature').href = "mailto:" + what
+}
+
+function setTimerFacebook(what) {
+    if (timerHandle) clearTimeout(timerHandle);
+    timerHandle = setTimeout(sendItOffFacebook,500); // delay is in milliseconds
+}
+function sendItOffFacebook() {
+    what = document.getElementById("facebook").value;
+    document.getElementById('facebooklink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+}
+
+function setTimerLinkedin(what) {
+    if (timerHandle) clearTimeout(timerHandle);
+    timerHandle = setTimeout(sendItOffLinkedin,500); // delay is in milliseconds
+}
+function sendItOffLinkedin() {
+    what = document.getElementById("linkedin").value;
+    document.getElementById('linkedinlink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+}
+function setTimerTwitter(what) {
+    if (timerHandle) clearTimeout(timerHandle);
+    timerHandle = setTimeout(sendItOffTwitter,500); // delay is in milliseconds
+}
+function sendItOffTwitter() {
+    what = document.getElementById("twitter").value;
+    document.getElementById('twitterlink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+}
+function setTimerXing(what) {
+    if (timerHandle) clearTimeout(timerHandle);
+    timerHandle = setTimeout(sendItOffXing,500); // delay is in milliseconds
+}
+function sendItOffXing() {
+    what = document.getElementById("xing").value;
+    document.getElementById('xinglink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+}
+function setTimerYoutube(what) {
+    if (timerHandle) clearTimeout(timerHandle);
+    timerHandle = setTimeout(sendItOffYoutube,500); // delay is in milliseconds
+}
+function sendItOffYoutube() {
+    what = document.getElementById("youtube").value;
+    document.getElementById('youtubelink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
 }
