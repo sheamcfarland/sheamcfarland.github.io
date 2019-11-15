@@ -39,7 +39,7 @@ document.getElementById('youtubecontainer').style.display = "none"
 
 phonebox.onclick = function() {
   if (phonebox.checked == true){
-    document.getElementById('phonecontainer').style.display = "inline"
+    document.getElementById('phonecontainer').style.display = "table"
     if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
@@ -55,7 +55,7 @@ phonebox.onclick = function() {
 
 mobilebox.onclick = function() {
   if (mobilebox.checked == true){
-    document.getElementById('mobilecontainer').style.display = "inline"
+    document.getElementById('mobilecontainer').style.display = "table"
     if (document.getElementById('mobile').value == ""){
         document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
         document.getElementById('mobilelink').innerText = document.getElementById('mobile').placeholder
@@ -71,7 +71,7 @@ mobilebox.onclick = function() {
 
   facebookbox.onclick = function() {
     if (facebookbox.checked == true){
-      document.getElementById('facebookcontainer').style.display = "inline"
+      document.getElementById('facebookcontainer').style.display = "table"
       if (document.getElementById('facebook').value == ""){
           document.getElementById('facebooklink').href = document.getElementById('facebook').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
         } else {
@@ -84,7 +84,7 @@ mobilebox.onclick = function() {
     }
     linkedinbox.onclick = function() {
       if (linkedinbox.checked == true){
-        document.getElementById('linkedincontainer').style.display = "inline"
+        document.getElementById('linkedincontainer').style.display = "table"
         if (document.getElementById('linkedin').value == ""){
             document.getElementById('linkedinlink').href = document.getElementById('linkedin').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
           } else {
@@ -97,7 +97,7 @@ mobilebox.onclick = function() {
       }
       twitterbox.onclick = function() {
         if (twitterbox.checked == true){
-          document.getElementById('twittercontainer').style.display = "inline"
+          document.getElementById('twittercontainer').style.display = "table"
           if (document.getElementById('twitter').value == ""){
               document.getElementById('twitterlink').href = document.getElementById('twitter').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
             } else {
@@ -110,7 +110,7 @@ mobilebox.onclick = function() {
         }
         xingbox.onclick = function() {
           if (xingbox.checked == true){
-            document.getElementById('xingcontainer').style.display = "inline"
+            document.getElementById('xingcontainer').style.display = "table"
             if (document.getElementById('xing').value == ""){
                 document.getElementById('xinglink').href = document.getElementById('xing').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
               } else {
@@ -123,7 +123,7 @@ mobilebox.onclick = function() {
           }
           youtubebox.onclick = function() {
             if (youtubebox.checked == true){
-              document.getElementById('youtubecontainer').style.display = "inline"
+              document.getElementById('youtubecontainer').style.display = "table"
               if (document.getElementById('youtube').value == ""){
                   document.getElementById('youtubelink').href = document.getElementById('youtube').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
                 } else {
