@@ -27,15 +27,19 @@ document.getElementById('mobilecontainer').style.display = "none"
 document.getElementById('email-signature').href = "mailto:" + document.getElementById('email').placeholder
 document.getElementById('email-signature').innerText = document.getElementById('email').placeholder
 document.getElementById('facebooklink').href = document.getElementById('facebook').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+document.getElementById('facebookcontainer').style.display = "inline"
 document.getElementById('linkedinlink').href = document.getElementById('linkedin').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+document.getElementById('linkedincontainer').style.display = "inline"
 document.getElementById('twitterlink').href = document.getElementById('twitter').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+document.getElementById('twittercontainer').style.display = "inline"
 document.getElementById('xinglink').href = ""
 document.getElementById('xingcontainer').style.display = "none"
+document.getElementById('youtubecontainer').style.display = "inline"
 document.getElementById('youtubelink').href = document.getElementById('youtube').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
 
 phonebox.onclick = function() {
   if (phonebox.checked == true){
-    document.getElementById('phonecontainer').style.display = "table-row-row"
+    document.getElementById('phonecontainer').style.display = "table-row"
     if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
