@@ -20,6 +20,8 @@
     <section class="generator">
 
         <div class="details">
+            <h2 class="sectionlabel">Information</h2>
+            <p class="subtitle"></p>
             <div>
                 <label for="name">Name</label>
                 <input type="text" id="name" title="Name" placeholder="John Doe" onkeypress="setTimerName(this.value)" autocomplete="off">
@@ -42,19 +44,21 @@
                 <label for="email">E-Mail Address</label>
                 <input type="text" id="email" title="Email" placeholder="name.surname@sightcall.com" onkeypress="setTimerEmail(this.value)" autocomplete="off">
             </div>
+            <h2 class="sectionlabel">Social</h2>
+            <p class="subtitle">Leaving the field blank will link to SighCall's company profiles</p>
             <div>
                 <label for="facebook">Facebook <i>(paste full url)</i></label>
-                <label class="checkcontainer"><input type="checkbox" id="facebookbox"><span class="checkmark"></span></label>
+                <label class="checkcontainer"><input type="checkbox" id="facebookbox" checked><span class="checkmark"></span></label>
                 <input type="text" id="facebook" title="Facebook" placeholder="https://www.facebook.com/sightcall" onkeypress="setTimerFacebook(this.value)" autocomplete="off">
             </div>
             <div>
                 <label for="linkedin">LinkedIn <i>(paste full url)</i></label>
-                <label class="checkcontainer"><input type="checkbox" id="linkedinbox"><span class="checkmark"></span></label>
+                <label class="checkcontainer"><input type="checkbox" id="linkedinbox" checked><span class="checkmark"></span></label>
                 <input type="text" id="linkedin" title="LinkedIn" placeholder="https://www.linkedin.com/company/sightcall" onkeypress="setTimerLinkedin(this.value)" autocomplete="off">
             </div>
             <div>
                 <label for="twitter">Twitter <i>(paste full url)</i></label>
-                <label class="checkcontainer"><input type="checkbox" id="twitterbox"><span class="checkmark"></span></label>
+                <label class="checkcontainer"><input type="checkbox" id="twitterbox" checked><span class="checkmark"></span></label>
                 <input type="text" id="twitter" title="Twitter" placeholder="https://www.twitter.com/sightcall" onkeypress="setTimerTwitter(this.value)" autocomplete="off">
             </div>
             <div>
@@ -64,7 +68,6 @@
             </div>
             <div>
                 <label for="youtube">Youtube <i>(paste full url)</i></label>
-                <label class="checkcontainer"><input type="checkbox" id="youtubebox"><span class="checkmark"></span></label>
                 <input type="text" id="youtube" title="Youtube" placeholder="https://www.youtube.com/c/sightcall" onkeypress="setTimerYoutube(this.value)" autocomplete="off">
             </div>
         </div>

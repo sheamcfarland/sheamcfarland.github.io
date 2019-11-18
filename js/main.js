@@ -26,20 +26,16 @@ document.getElementById('mobilelink').innerText = ""
 document.getElementById('mobilecontainer').style.display = "none"
 document.getElementById('email-signature').href = "mailto:" + document.getElementById('email').placeholder
 document.getElementById('email-signature').innerText = document.getElementById('email').placeholder
-document.getElementById('facebooklink').href = ""
-document.getElementById('facebookcontainer').style.display = "none"
-document.getElementById('linkedinlink').href = ""
-document.getElementById('linkedincontainer').style.display = "none"
-document.getElementById('twitterlink').href = ""
-document.getElementById('twittercontainer').style.display = "none"
+document.getElementById('facebooklink').href = document.getElementById('facebook').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+document.getElementById('linkedinlink').href = document.getElementById('linkedin').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+document.getElementById('twitterlink').href = document.getElementById('twitter').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
 document.getElementById('xinglink').href = ""
 document.getElementById('xingcontainer').style.display = "none"
-document.getElementById('youtubelink').href = ""
-document.getElementById('youtubecontainer').style.display = "none"
+document.getElementById('youtubelink').href = document.getElementById('youtube').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
 
 phonebox.onclick = function() {
   if (phonebox.checked == true){
-    document.getElementById('phonecontainer').style.display = "table"
+    document.getElementById('phonecontainer').style.display = "table-row-row"
     if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
@@ -55,7 +51,7 @@ phonebox.onclick = function() {
 
 mobilebox.onclick = function() {
   if (mobilebox.checked == true){
-    document.getElementById('mobilecontainer').style.display = "table"
+    document.getElementById('mobilecontainer').style.display = "table-row"
     if (document.getElementById('mobile').value == ""){
         document.getElementById('mobilelink').href = "tel:" + document.getElementById('mobile').placeholder
         document.getElementById('mobilelink').innerText = document.getElementById('mobile').placeholder
