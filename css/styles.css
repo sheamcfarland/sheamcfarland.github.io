@@ -124,13 +124,13 @@ button:hover {
 
 .smalllabel {
   font-weight: bold;
-    color: #F58220;
+    color: #F38732;
     margin-right: 5px;
 }
 
 .rail {
   height: 2rem;
-  background-color: #F58220;
+  background-color: #F38732;
 }
 
 .logo {
@@ -171,7 +171,7 @@ button:hover {
 
 .primary {
   color: white;
-  background-color: #F58220;
+  background-color: #F38732;
   transition: all 0.2s ease-in;}
 
 .preview {
