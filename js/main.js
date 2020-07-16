@@ -7,6 +7,15 @@ var xingbox = document.querySelector("input#xingbox");
 var youtubebox = document.querySelector("input#youtubebox");
 
 document.querySelector("input#name").onkeyup = function(){setTimerName(document.querySelector("input#name").value)};
+document.querySelector("input#title-2").onkeyup = function(){setTimerTitle(document.querySelector("input#title-2").value)};
+document.querySelector("input#phone").onkeyup = function(){setTimerPhone(document.querySelector("input#phone").value)};
+document.querySelector("input#mobile").onkeyup = function(){setTimerMobile(document.querySelector("input#mobile").value)};
+document.querySelector("input#email").onkeyup = function(){setTimerEmail(document.querySelector("input#email").value)};
+document.querySelector("input#facebook").onkeyup = function(){setTimerFacebook(document.querySelector("input#facebook").value)};
+document.querySelector("input#linkedin").onkeyup = function(){setTimerLinkedin(document.querySelector("input#linkedin").value)};
+document.querySelector("input#twitter").onkeyup = function(){setTimerTwitter(document.querySelector("input#twitter").value)};
+document.querySelector("input#xing").onkeyup = function(){setTimerXing(document.querySelector("input#xing").value)};
+document.querySelector("input#youtube").onkeyup = function(){setTimerYoutube(document.querySelector("input#youtube").value)};
 
 var Webflow = Webflow || [];
   Webflow.push(function() {
