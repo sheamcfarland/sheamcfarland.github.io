@@ -18,8 +18,8 @@ document.getElementsByClassName("primary")[0].onclick = function(e) {
 };
 
 // Inizitalice signature
-document.getElementsByTagName('td')[2].innerText = document.getElementById('name').placeholder
-document.getElementsByTagName('td')[3].innerText = document.getElementById('title').placeholder
+document.getElementById('nametext') = document.getElementById('name').placeholder
+document.getElementById('titletext') = document.getElementById('title').placeholder
 document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
 document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
 document.getElementById('mobilelink').innerText = ""
