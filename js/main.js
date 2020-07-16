@@ -58,9 +58,10 @@ document.getElementById('youtubecontainer').style.display = "inline"
 document.getElementById('youtubelink').href = document.getElementById('youtube').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
 
 phonebox.onclick = function() {
+  console.log("toggle");
   if (phonebox.checked == true){
     document.getElementById('phonecontainer').style.display = "table-row"
-    console.log("checked");
+    console.log(phonebox.checked);
     if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
@@ -69,7 +70,7 @@ phonebox.onclick = function() {
         document.getElementById('phonelink').innerText = document.getElementById('phone').value
       }
     } else {
-      console.log("unchecked");
+      console.log(phonebox.checked);
       document.getElementById('phonelink').innerText = ""
       document.getElementById('phonecontainer').style.display = "none"
     }
