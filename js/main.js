@@ -69,10 +69,8 @@ document.getElementById('xingcontainer').style.display = "none"
 document.getElementById('youtubelink').href = document.getElementById('youtube').placeholder + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
 
 phonebox.onclick = function() {
-  console.log("toggle");
   if (phonebox.checked == true){
     document.getElementById('phonecontainer').style.display = "table-row"
-    console.log(phonebox.checked);
     if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
@@ -185,7 +183,7 @@ function setTimerTitle(what) {
     timerHandle = setTimeout(sendItOffTitle,500); // delay is in milliseconds
 }
 function sendItOffTitle() {
-    what = document.getElementById("title").value;
+    what = document.querySelector("input#title-2").value;
     document.getElementsByTagName('td')[3].innerText = what
 }
 
