@@ -39,7 +39,7 @@ document.getElementsByClassName("primary")[0].onclick = function(e) {
 
 // Inizitalice signature
 document.getElementById('nametext').innerText = document.getElementById('name').placeholder
-document.getElementById('titletext').innerText = document.getElementById('title').placeholder
+document.getElementById('titletext').innerText = document.getElementById('title-2').placeholder
 document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
 document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
 document.getElementById('mobilelink').innerText = ""
