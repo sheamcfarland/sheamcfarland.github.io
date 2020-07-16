@@ -60,6 +60,7 @@ document.getElementById('youtubelink').href = document.getElementById('youtube')
 phonebox.onclick = function() {
   if (phonebox.checked == true){
     document.getElementById('phonecontainer').style.display = "table-row"
+    console.log("checked");
     if (document.getElementById('phone').value == ""){
         document.getElementById('phonelink').href = "tel:" + document.getElementById('phone').placeholder
         document.getElementById('phonelink').innerText = document.getElementById('phone').placeholder
@@ -68,6 +69,7 @@ phonebox.onclick = function() {
         document.getElementById('phonelink').innerText = document.getElementById('phone').value
       }
     } else {
+      console.log("unchecked");
       document.getElementById('phonelink').innerText = ""
       document.getElementById('phonecontainer').style.display = "none"
     }
