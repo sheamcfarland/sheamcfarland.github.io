@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>SightCall Email Signature Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="rail"></div>
+        <img class="logo" src="./images/logo.png" alt="Logo">
+        <h1 class="title">Email signature generator</h1>
+        <p class="subtitle">Enter your information below and click the button to generate a SightCall email signature</p>
+    </header>
+
+    <section class="generator">
+
+        <div class="details">
+            <h2 class="sectionlabel">Information</h2>
+            <p class="subtitle"></p>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" title="Name" placeholder="John Doe" onkeypress="setTimerName(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" title="Title" placeholder="Chief Morale Officer" onkeypress="setTimerTitle(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="phone">Phone number</label>
+                <label class="checkcontainer"><input type="checkbox" id="phonebox" checked><span class="checkmark"></span></label>
+                <input type="text" id="phone" title="Phone" placeholder="+1 (555) 555-5555" onkeypress="setTimerPhone(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="mobile">Mobile number</label>
+                <label class="checkcontainer"><input type="checkbox" id="mobilebox"><span class="checkmark"></span></label>
+                <input type="text" id="mobile" title="Mobile" placeholder="+1 (555) 555-5555" onkeypress="setTimerMobile(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="email">E-Mail Address</label>
+                <input type="text" id="email" title="Email" placeholder="name.surname@sightcall.com" onkeypress="setTimerEmail(this.value)" autocomplete="off">
+            </div>
+            <h2 class="sectionlabel">Social</h2>
+            <p class="subtitle" style="text-align:left">Leaving the field blank will link to SightCall's company profiles</p>
+            <div>
+                <label for="facebook">Facebook <i>(paste full url)</i></label>
+                <label class="checkcontainer"><input type="checkbox" id="facebookbox" checked><span class="checkmark"></span></label>
+                <input type="text" id="facebook" title="Facebook" placeholder="https://www.facebook.com/sightcall" onkeypress="setTimerFacebook(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="linkedin">LinkedIn <i>(paste full url)</i></label>
+                <label class="checkcontainer"><input type="checkbox" id="linkedinbox" checked><span class="checkmark"></span></label>
+                <input type="text" id="linkedin" title="LinkedIn" placeholder="https://www.linkedin.com/company/sightcall" onkeypress="setTimerLinkedin(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="twitter">Twitter <i>(paste full url)</i></label>
+                <label class="checkcontainer"><input type="checkbox" id="twitterbox" checked><span class="checkmark"></span></label>
+                <input type="text" id="twitter" title="Twitter" placeholder="https://www.twitter.com/sightcall" onkeypress="setTimerTwitter(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="xing">Xing <i>(paste full url)</i></label>
+                <label class="checkcontainer"><input type="checkbox" id="xingbox"><span class="checkmark"></span></label>
+                <input type="text" id="xing" title="Xing" placeholder="https://www.xing.com/companies/go?name=SightCall" onkeypress="setTimerXing(this.value)" autocomplete="off">
+            </div>
+            <div>
+                <label for="youtube">Youtube <i>(paste full url)</i></label>
+                <label class="checkcontainer"><input type="checkbox" id="youtubebox" checked><span class="checkmark"></span></label>
+                <input type="text" id="youtube" title="Youtube" placeholder="https://www.youtube.com/c/sightcall" onkeypress="setTimerYoutube(this.value)" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="preview">
+            <label> Preview </label>
+            <div class="signature">
+                <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+                    <tr>
+                        <td valign="top" style="border-top: 0; border-bottom: 0; border-left: 0; border-right: solid 3px #D4D4D4; padding-right: 10px;">
+                            <a href="https://www.sightcall.com/?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature">
+                                <img id="img-sign" height="157px" width="200px" src="data:image/png;base64,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">
+                            </a>
+                        </td>
+                        <td style="padding-top: 0; padding-bottom: 0; padding-left: 12px; padding-right: 0;">
+                            <table cellpadding="0" cellspacing="0" border="0" style="background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+                                <tr>
+                                    <td colspan="2" style="color: #F38732; font-size: 16px; font-family: Helvetica, sans-serif;"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding-bottom: 5px; color: #666; font-size: 12px; font-family: Helvetica, sans-serif; font-style:italic;"><i></i></td>
+                                </tr>
+                                <tr id="phonecontainer">
+                                    <td valign="top" style="vertical-align: top; font-size: 12px; font-family: Helvetica, sans-serif;"><span class="smalllabel" id="phonelinklabel">P </span><a href="" style="color: #909298;text-decoration:underline;
+                                    font-weight: normal; font-size: 12px;" id="phonelink"></a></td>
+                                </tr>
+                                <tr id="mobilecontainer">
+                                  <td valign="top" style="vertical-align: top; font-size: 12px; font-family: Helvetica, sans-serif;"><span class="smalllabel" id="mobilelinklabel">M </span><a href="" style="color: #909298;text-decoration:underline;
+                                  font-weight: normal; font-size: 12px;" id="mobilelink"></a></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="vertical-align: top; font-size: 12px; font-family: Helvetica, sans-serif;"><span class="smalllabel" id="emaillinklabel">E </span><a href="" style="color: #909298;text-decoration:underline;
+                                    font-weight: normal; font-size: 12px;" id="email-signature"></a></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top" style="vertical-align: top; font-size: 12px; font-family: Helvetica, sans-serif;"><span class="smalllabel" id="weblinklabel">W </span><a href="https://www.sightcall.com/?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature" style="color: #909298;text-decoration:underline;
+                                    font-weight: normal; font-size: 12px;">https://www.sightcall.com</a></td>
+                                </tr>
+                            </table>
+                            <table style="margin-top: 5px;">
+                                <tr>
+                                  <th id="facebookcontainer"><a href="" id="facebooklink"><img height="24px" width="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTEtMjFUMTA6MDI6MDItMDY6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTExLTIxVDEwOjA2OjUwLTA2OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTExLTIxVDEwOjA2OjUwLTA2OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmM1NzgxM2U4LWJjNzctNDg2NS1hYzk5LWFmNTA2OTg5ODI1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpjNTc4MTNlOC1iYzc3LTQ4NjUtYWM5OS1hZjUwNjk4OTgyNTciIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpjNTc4MTNlOC1iYzc3LTQ4NjUtYWM5OS1hZjUwNjk4OTgyNTciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmM1NzgxM2U4LWJjNzctNDg2NS1hYzk5LWFmNTA2OTg5ODI1NyIgc3RFdnQ6d2hlbj0iMjAxOS0xMS0yMVQxMDowMjowMi0wNjowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+9drD0gAAALlJREFUSIntlL0NwjAUhD8jBmCEbAA9LhiBFjfQeYyELXCXyjUbAJIHgA2cDdgAClwgGj8LRSIo11jvyXene/5Ry83hQY+Y9Ck+GvyGwbRw/w1ogHuqTzlCaYJ18PYIXKWEkgRd8DZq42bAGZhLSCUJYloXUnGQJ9i/GcRUV8A2R1SSryJ4qz572rgVgkMWJdDGNUAM3rbauArY8UqQhXRENXAB2iRcC3l/8JKHbyC6pt9g+CMaDbJ4AqrkJOgZVvHxAAAAAElFTkSuQmCC"></a></th>
+                                  <th id="linkedincontainer"><a href="" id="linkedinlink"><img height="24px" width="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTEtMjFUMDk6NTM6NTAtMDY6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjE3LTA2OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjE3LTA2OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmFhZjQzYzdkLTc1NmEtNDU3NC04OGY2LTVhYmU2ZTM4OTE5MSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDphYWY0M2M3ZC03NTZhLTQ1NzQtODhmNi01YWJlNmUzODkxOTEiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphYWY0M2M3ZC03NTZhLTQ1NzQtODhmNi01YWJlNmUzODkxOTEiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmFhZjQzYzdkLTc1NmEtNDU3NC04OGY2LTVhYmU2ZTM4OTE5MSIgc3RFdnQ6d2hlbj0iMjAxOS0xMS0yMVQwOTo1Mzo1MC0wNjowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Vak2/gAAALpJREFUSInt07ENwjAQheH/ED0egREyQtJ6CVaACpehc5kRyBC4ZgMyAiPABKYgUiIkYkW2JZDyqjtb8if5dMLx4smYVc7HF+D3gSdwygk03uoaaGMACexBC+xigNAMoh4PAZW3WhjmMO4P3mrp+4r3vGYD39IAZzGuAPBWX4E6JaCAO3AT4/b9WZcSKIHNqAZ4pAS2o1oBeKu7lMCsZAfWE3eFGAfDl3z2AEqMK6eA0CZH5/9nsADBvADpjioO0enCxgAAAABJRU5ErkJggg=="></a></th>
+                                  <th id="twittercontainer"><a href="" id="twitterlink"><img height="24px" width="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTEtMjFUMDk6NTM6NTAtMDY6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjIyLTA2OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjIyLTA2OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjViOTAyZDZkLWU3YjgtNGY5OS04NjU2LTViNzJkNDBmODA3ZCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1YjkwMmQ2ZC1lN2I4LTRmOTktODY1Ni01YjcyZDQwZjgwN2QiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1YjkwMmQ2ZC1lN2I4LTRmOTktODY1Ni01YjcyZDQwZjgwN2QiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjViOTAyZDZkLWU3YjgtNGY5OS04NjU2LTViNzJkNDBmODA3ZCIgc3RFdnQ6d2hlbj0iMjAxOS0xMS0yMVQwOTo1Mzo1MC0wNjowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+OPWmzgAAAOlJREFUSIntlNEJwjAURY/iv2SCuoGOUCewEOx3nUDdoCM4gt/BgiPEDXQDXcDqBPqRCFLalyIICr1QaNLmHPJe2t58d33wxfS/Ce8EnaAxd2ANLICTHzdmIDw7AEdgWZlPjFbW32/TokyADRDVQaQdTPzCqZcB8AZ/5dwEDwkAcqOVNVrFgPKyamIJIJXoZrTKXgOj1Q2wNe+NJIG0gygtyn1alCIASD4VgOtDY9KiXCHUv40gwp2UrAY+AfLA+qDggjsltgLP/NwwJJCaDO47sMDI9yLG1XwcArcVzPz1cX7yX9QJ/kzwBIJSNJuX9WvtAAAAAElFTkSuQmCC"></a></th>
+                                  <th id="xingcontainer"><a href="" id="xinglink"><img height="24px" width="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTEtMjFUMDk6NTM6NTAtMDY6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjI3LTA2OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjI3LTA2OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBjOTUyYmM0LTFjZWQtNDJiYy04ZTVkLWUwNTg4ZGE0ZTZjNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowYzk1MmJjNC0xY2VkLTQyYmMtOGU1ZC1lMDU4OGRhNGU2YzciIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowYzk1MmJjNC0xY2VkLTQyYmMtOGU1ZC1lMDU4OGRhNGU2YzciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjBjOTUyYmM0LTFjZWQtNDJiYy04ZTVkLWUwNTg4ZGE0ZTZjNyIgc3RFdnQ6d2hlbj0iMjAxOS0xMS0yMVQwOTo1Mzo1MC0wNjowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7szf+AAAAUNJREFUSInVldFVwzAMRa85/LcbtBuEDVomoBPgZAIygkdIJ0g8AhPQjsAElA3CBOEjThHCSVOacg76kmP7XUm2HEP62HBFu7mm+J8AbifQ2AJ18O+AhykBz03p825gMrvTCy4tkRTfACu9oC+DvfCXwCKyZtuU/iDGRUyoD+Ca0u9CZEvgTc1/AK4bmMy6niB6S1R1TojSRwKog/gcUaqxgIXJbCoFhf/elL5Qc7NzAQBHgMri+D2U72lAYxBQKaENsO/ORq85F7BvSi83O9oypAK6JnItxwKcErKAV9eyYoTFAF6VoejZW48BmMhz/So2z4FEzN2L/lgDL6cAsQwS2tqulDiIbAJI98cowJAlJrO5GOe0XT0ZAMCF7iV0s5saMON7qQrac4vab/8H1mS25usyHPh5XhcB4MQT0dn//+l/ArLOYq89wUJOAAAAAElFTkSuQmCC"></a></th>
+                                  <th id="youtubecontainer"><a href="" id="youtubelink"><img height="24px" width="24px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTEtMjFUMDk6NTM6NTAtMDY6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjMzLTA2OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE5LTExLTIxVDEwOjA3OjMzLTA2OjAwIiBkYzpmb3JtYXQ9ImltYWdlL3BuZyIgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjBhMDRmNmY5LTlhYWQtNDBkMi1hMzhjLWZiY2FjMjM3ZmI1ZCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowYTA0ZjZmOS05YWFkLTQwZDItYTM4Yy1mYmNhYzIzN2ZiNWQiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowYTA0ZjZmOS05YWFkLTQwZDItYTM4Yy1mYmNhYzIzN2ZiNWQiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjBhMDRmNmY5LTlhYWQtNDBkMi1hMzhjLWZiY2FjMjM3ZmI1ZCIgc3RFdnQ6d2hlbj0iMjAxOS0xMS0yMVQwOTo1Mzo1MC0wNjowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+5b+e5gAAALNJREFUSIntlb0NwjAUhL8gBohwgctsACNkAO8AbJBRMoJ3wAMwQpgA6NJEygbQWMhC8bML0vm65zvdJ/9Irq67/ZsVtVmzvAAK4D/aCt4dOJtpHKQCp/QRsMBhyZd20KfKAXymj/kS4BkOTunWKW2d0k0qmwuYF9ZOwMOD6kQ2CYjpBdzMNEZLQ0mXXP/MM3Ax02gzslmAJhz8ZQ452VDSEXVO6Vbwge8z7WJ+Vf6DAigAPkT4K8lyMHYpAAAAAElFTkSuQmCC"></a></th> </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button class="primary">Copy Signature</button>
+            <p class="subsubtitle">Paste into the Outlook Email Signature text box</p>
+            <p class="subsubtitle">For info on how to accomplish this:</p>
+            <p class="subsubtitle"><a href="https://support.office.com/en-us/article/create-and-add-an-email-signature-in-outlook-com-776d9006-abdf-444e-b5b7-a61821dff034">Outlook.com</a></p>
+            <p class="subsubtitle"><a href="https://support.office.com/en-us/article/create-and-add-a-signature-to-messages-8ee5d4f4-68fd-464a-a1c1-0e1c80bb27f2">Outlook</a></p>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
