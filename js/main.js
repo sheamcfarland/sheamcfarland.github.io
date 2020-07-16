@@ -6,6 +6,8 @@ var twitterbox = document.querySelector("input#twitterbox");
 var xingbox = document.querySelector("input#xingbox");
 var youtubebox = document.querySelector("input#youtubebox");
 
+document.querySelector("input#name").onkeyup = setTimerName(document.querySelector("input#name").value);
+
 var Webflow = Webflow || [];
   Webflow.push(function() {
     $.get('https://raw.githubusercontent.com/sheamcfarland/sheamcfarland.github.io/master/facebook.html', function(data) {
@@ -212,7 +214,7 @@ function setTimerFacebook(what) {
 }
 function sendItOffFacebook() {
     what = document.getElementById("facebook").value;
-    document.getElementById('facebooklink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+    document.getElementById('facebooklink').href = what + "?utm_source=Email&utm_medium=email&utm_campaign=signature"
 }
 
 function setTimerLinkedin(what) {
@@ -221,7 +223,7 @@ function setTimerLinkedin(what) {
 }
 function sendItOffLinkedin() {
     what = document.getElementById("linkedin").value;
-    document.getElementById('linkedinlink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+    document.getElementById('linkedinlink').href = what + "?utm_source=Email&utm_medium=email&utm_campaign=signature"
 }
 function setTimerTwitter(what) {
     if (timerHandle) clearTimeout(timerHandle);
@@ -229,7 +231,7 @@ function setTimerTwitter(what) {
 }
 function sendItOffTwitter() {
     what = document.getElementById("twitter").value;
-    document.getElementById('twitterlink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+    document.getElementById('twitterlink').href = what + "?utm_source=Email&utm_medium=email&utm_campaign=signature"
 }
 function setTimerXing(what) {
     if (timerHandle) clearTimeout(timerHandle);
@@ -237,7 +239,7 @@ function setTimerXing(what) {
 }
 function sendItOffXing() {
     what = document.getElementById("xing").value;
-    document.getElementById('xinglink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+    document.getElementById('xinglink').href = what + "?utm_source=Email&utm_medium=email&utm_campaign=signature"
 }
 function setTimerYoutube(what) {
     if (timerHandle) clearTimeout(timerHandle);
@@ -245,5 +247,5 @@ function setTimerYoutube(what) {
 }
 function sendItOffYoutube() {
     what = document.getElementById("youtube").value;
-    document.getElementById('youtubelink').href = what + "?utm_source=Email&utm_medium=email&utm_term=&utm_content=&utm_campaign=signature"
+    document.getElementById('youtubelink').href = what + "?utm_source=Email&utm_medium=email&utm_campaign=signature"
 }
