@@ -5,6 +5,26 @@ var linkedinbox = document.getElementById("linkedinbox");
 var twitterbox = document.getElementById("twitterbox");
 var xingbox = document.getElementById("xingbox");
 var youtubebox = document.getElementById("youtubebox");
+
+var Webflow = Webflow || [];
+  Webflow.push(function() {
+    $.get('https://raw.githubusercontent.com/sheamcfarland/sheamcfarland.github.io/master/facebook.html', function(data) {
+      $('#ajaxContentfb').append(data);
+    });
+    $.get('https://raw.githubusercontent.com/sheamcfarland/sheamcfarland.github.io/master/linkedin.html', function(data) {
+      $('#ajaxContentli').append(data);
+    });
+    $.get('https://raw.githubusercontent.com/sheamcfarland/sheamcfarland.github.io/master/twitter.html', function(data) {
+      $('#ajaxContenttw').append(data);
+    });
+    $.get('https://raw.githubusercontent.com/sheamcfarland/sheamcfarland.github.io/master/xing.html', function(data) {
+      $('#ajaxContentxi').append(data);
+    });
+    $.get('https://raw.githubusercontent.com/sheamcfarland/sheamcfarland.github.io/master/youtube.html', function(data) {
+      $('#ajaxContentyt').append(data);
+    });
+  });
+
 // Copy button
 document.getElementsByClassName("primary")[0].onclick = function(e) {
     var text = document.getElementsByClassName('signature')[0];
