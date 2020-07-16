@@ -6,7 +6,7 @@ var twitterbox = document.querySelector("input#twitterbox");
 var xingbox = document.querySelector("input#xingbox");
 var youtubebox = document.querySelector("input#youtubebox");
 
-document.querySelector("input#name").onkeyup = setTimerName(document.querySelector("input#name").value);
+document.querySelector("input#name").onkeyup = function(){setTimerName(document.querySelector("input#name").value)};
 
 var Webflow = Webflow || [];
   Webflow.push(function() {
