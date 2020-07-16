@@ -1,10 +1,10 @@
-var phonebox = document.getElementById("phonebox");
-var mobilebox = document.getElementById("mobilebox");
-var facebookbox = document.getElementById("facebookbox");
-var linkedinbox = document.getElementById("linkedinbox");
-var twitterbox = document.getElementById("twitterbox");
-var xingbox = document.getElementById("xingbox");
-var youtubebox = document.getElementById("youtubebox");
+var phonebox = document.querySelector("input#phonebox");
+var mobilebox = document.querySelector("input#mobilebox");
+var facebookbox = document.querySelector("input#facebookbox");
+var linkedinbox = document.querySelector("input#linkedinbox");
+var twitterbox = document.querySelector("input#twitterbox");
+var xingbox = document.querySelector("input#xingbox");
+var youtubebox = document.querySelector("input#youtubebox");
 
 var Webflow = Webflow || [];
   Webflow.push(function() {
