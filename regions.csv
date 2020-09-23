@@ -1,13 +1,12 @@
-area,owner
+areas,owner
 Afghanistan,0
 Alabama,0
-Aland,0
 Alaska,0
 Albania,0
 Alberta,0
 Algeria,0
-Andorra,0
 Angola,0
+Antarctica,0
 Argentina,0
 Arizona,0
 Arkansas,0
@@ -15,243 +14,227 @@ Armenia,0
 Australia,0
 Austria,0
 Azerbaijan,0
-Bahamas,0
-Baikonur,0
 Bangladesh,0
 Belarus,0
 Belgium,0
 Belize,0
 Benin,0
+Bermuda,0
 Bhutan,0
 Bolivia,0
-Bosnia and Herz.,1
-Botswana,1
-Brazil,1
-British Columbia,1
-Brunei,1
-Bulgaria,1
-Burkina Faso,1
-Burundi,1
-CÃ´te d'Ivoire,1
-California,1
-Cambodia,1
-Cameroon,1
-Canada,1
-Cape Verde,1
-Central African Rep.,1
-Chad,1
-Chile,1
-China,1
-Colombia,1
-Colorado,1
-Comoros,1
-Congo,1
-Connecticut,1
-Costa Rica,1
-Croatia,1
-Cuba,1
-Cyprus,1
-Cyprus U.N. Buffer Zone,1
-Czech Rep.,1
-Delaware,1
-Dem. Rep. Congo,1
-Dem. Rep. Korea,1
-Denmark,1
-Dhekelia,1
-District of Columbia,1
-Djibouti,1
-Dominica,1
-Dominican Rep.,1
-Ecuador,1
-Egypt,1
-El Salvador,1
-Eq. Guinea,1
-Eritrea,1
-Estonia,1
-Ethiopia,1
-Falkland Is.,1
+Bosnia and Herzegovina,0
+Botswana,0
+Brazil,0
+British Columbia,0
+Brunei,0
+Bulgaria,0
+Burkina Faso,0
+Burundi,0
+California,0
+Cambodia,0
+Cameroon,0
+Central African Republic,0
+Chad,0
+Chile,0
+China,0
+Colombia,0
+Colorado,0
+Connecticut,0
+Costa Rica,0
+Croatia,0
+Cuba,0
+Cyprus,0
+Czech Republic,0
+Delaware,0
+Democratic Republic of the Congo,0
+Denmark,0
+Djibouti,0
+Dominican Republic,0
+East Timor,0
+Ecuador,0
+Egypt,0
+El Salvador,0
+Equatorial Guinea,0
+Eritrea,0
+Estonia,0
+Ethiopia,0
+Falkland Islands,1
 Fiji,1
 Finland,1
 Florida,1
-Fr. Polynesia,1
-Fr. S. Antarctic Lands,1
-France,2
-Gabon,2
-Gambia,2
-Georgia,2
-Georgia,2
-Germany,2
-Ghana,2
-Greece,2
-Greenland,2
-Guatemala,2
-Guinea,2
-Guinea-Bissau,2
-Guyana,2
-Haiti,2
-Hawaii,2
-Honduras,2
-Hong Kong,2
-Hungary,2
-Iceland,2
-Idaho,2
-Illinois,2
-India,2
-Indiana,2
-Indonesia,2
-Iowa,2
-Iran,2
-Iraq,2
-Ireland,2
-Isle of Man,2
-Israel,2
-Italy,2
-Jamaica,2
-Japan,2
-Jordan,2
-Kansas,2
-Kazakhstan,2
-Kentucky,2
-Kenya,2
-Korea,2
-Kosovo,2
-Kuwait,3
-Kyrgyzstan,3
-Lao PDR,3
-Latvia,3
-Lebanon,3
-Lesotho,3
-Liberia,3
-Libya,3
-Lithuania,3
-Louisiana,3
-Luxembourg,3
-Macedonia,3
-Madagascar,3
-Maine,3
-Malawi,3
-Malaysia,3
-Mali,3
-Manitoba,3
-Maryland,3
-Massachusetts,3
-Mauritania,3
-Mauritius,3
-Mexico,3
-Michigan,3
-Minnesota,3
-Mississippi,3
-Missouri,3
-Moldova,3
-Mongolia,3
-Montana,3
-Montenegro,3
-Morocco,3
-Mozambique,3
-Myanmar,3
-N. Cyprus,3
-Namibia,3
-Nebraska,3
-Nepal,3
-Netherlands,3
-Nevada,3
-New Brunswick,3
-New Caledonia,3
-New Hampshire,3
-New Jersey,3
-New Mexico,3
-New York,3
-New Zealand,3
-Newfoundland and Labrador,3
-Nicaragua,3
-Niger,3
-Nigeria,3
-North Carolina,3
-North Dakota,3
-Northwest Territories,3
-Norway,3
-Nova Scotia,3
-Nunavut,3
-Ohio,3
-Oklahoma,3
-Oman,3
-Ontario,3
-Oregon,3
-Pakistan,3
-Palestine,3
-Panama,3
-Papua New Guinea,3
-Paraguay,3
-Pennsylvania,3
-Peru,3
-Philippines,3
-Poland,3
-Portugal,3
-Prince Edward Island,3
-Puerto Rico,3
-Qatar,3
-QuÃ©bec,3
+France,1
+French Guiana,1
+French Southern and Antarctic Lands,1
+Gabon,1
+Gambia,1
+Georgia,1
+Georgia (Country),1
+Germany,1
+Ghana,1
+Greece,1
+Greenland,1
+Guatemala,1
+Guinea,1
+Guinea Bissau,1
+Guyana,1
+Haiti,1
+Hawaii,1
+Honduras,1
+Hungary,1
+Iceland,1
+Idaho,1
+Illinois,1
+India,1
+Indiana,1
+Indonesia,1
+Iowa,1
+Iran,1
+Iraq,1
+Ireland,1
+Israel,1
+Italy,1
+Ivory Coast,1
+Jamaica,1
+Japan,1
+Jordan,1
+Kansas,1
+Kazakhstan,1
+Kentucky,1
+Kenya,1
+Kosovo,1
+Kuwait,1
+Kyrgyzstan,1
+Laos,1
+Latvia,1
+Lebanon,1
+Lesotho,1
+Liberia,1
+Libya,1
+Lithuania,1
+Louisiana,1
+Luxembourg,1
+Macedonia,1
+Madagascar,1
+Maine,1
+Malawi,1
+Malaysia,1
+Mali,2
+Malta,2
+Manitoba,2
+Maryland,2
+Massachusetts,2
+Mauritania,2
+Mexico,2
+Michigan,2
+Minnesota,2
+Mississippi,2
+Missouri,2
+Moldova,2
+Mongolia,2
+Montana,2
+Montenegro,2
+Morocco,2
+Mozambique,2
+Myanmar,2
+Namibia,2
+Nebraska,2
+Nepal,2
+Netherlands,2
+Nevada,2
+New Brunswick,2
+New Caledonia,2
+New Hampshire,2
+New Jersey,2
+New Mexico,2
+New York,2
+New Zealand,2
+Nicaragua,2
+Niger,2
+Nigeria,2
+North Carolina,2
+North Dakota,2
+North Korea,2
+Northern Cyprus,2
+Northwest Territories,2
+Norway,2
+Nova Scotia,2
+Nunavut,2
+Ohio,2
+Oklahoma,2
+Oman,2
+Ontario,2
+Oregon,2
+Pakistan,2
+Panama,2
+Papua New Guinea,2
+Paraguay,2
+Pennsylvania,2
+Peru,2
+Philippines,2
+Poland,2
+Portugal,2
+Prince Edward Island,2
+Puerto Rico,2
+Qatar,2
+Republic of Serbia,2
+Republic of the Congo,2
 Rhode Island,3
 Romania,3
 Russia,3
 Rwanda,3
-S. Geo. and S. Sandw. Is.,3
-S. Sudan,3
-SÃ£o TomÃ© and Principe,3
-Samoa,3
 Saskatchewan,3
 Saudi Arabia,3
 Senegal,3
-Serbia,3
-Siachen Glacier,3
 Sierra Leone,3
 Slovakia,3
 Slovenia,3
-Solomon Is.,3
+Solomon Islands,3
 Somalia,3
 Somaliland,3
 South Africa,3
 South Carolina,3
 South Dakota,3
-Spain,0
-Sri Lanka,0
-Sudan,0
-Suriname,0
-Swaziland,0
-Sweden,0
-Switzerland,0
-Syria,0
-Taiwan,0
-Tajikistan,0
-Tanzania,0
-Tennessee,0
-Texas,0
-Thailand,0
-Timor-Leste,0
-Togo,0
-Trinidad and Tobago,0
-Tunisia,0
-Turkey,0
-Turkmenistan,0
-Uganda,0
-Ukraine,0
-United Arab Emirates,0
-United Kingdom,0
-United States,0
-Uruguay,0
-Utah,0
-Uzbekistan,0
-Vanuatu,0
-Venezuela,0
-Vermont,0
-Vietnam,0
-Virginia,0
-W. Sahara,0
-Washington,0
-West Virginia,0
-Wisconsin,0
-Wyoming,0
-Yemen,0
-Yukon,0
-Zambia,0
-Zimbabwe,0
+South Korea,3
+South Sudan,3
+Spain,3
+Sri Lanka,3
+Sudan,3
+Suriname,3
+Swaziland,3
+Sweden,3
+Switzerland,3
+Syria,3
+Taiwan,3
+Tajikistan,3
+Tennessee,3
+Texas,3
+Thailand,3
+The Bahamas,3
+Togo,3
+Trinidad and Tobago,3
+Tunisia,3
+Turkey,3
+Turkmenistan,3
+Uganda,3
+Ukraine,3
+United Arab Emirates,3
+United Kingdom,3
+United Republic of Tanzania,3
+Uruguay,3
+Utah,3
+Uzbekistan,3
+Vanuatu,3
+Venezuela,3
+Vermont,3
+Vietnam,3
+Virginia,3
+Washington,3
+West Bank,3
+West Virginia,3
+Western Sahara,3
+Wisconsin,3
+Wyoming,3
+Yemen,3
+Yukon Territory,3
+Zambia,3
+Zimbabwe,3
