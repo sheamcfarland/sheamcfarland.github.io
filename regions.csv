@@ -1,15 +1,15 @@
 areas,owner
 Afghanistan,0
-Alabama,0
-Alaska,0
+Alabama,4
+Alaska,5
 Albania,0
-Alberta,0
+Alberta,5
 Algeria,0
 Angola,0
 Antarctica,0
 Argentina,0
-Arizona,0
-Arkansas,0
+Arizona,2
+Arkansas,4
 Armenia,0
 Australia,0
 Austria,0
@@ -25,12 +25,12 @@ Bolivia,0
 Bosnia and Herzegovina,0
 Botswana,0
 Brazil,0
-British Columbia,0
+British Columbia,5
 Brunei,0
 Bulgaria,0
 Burkina Faso,0
 Burundi,0
-California,0
+California,2
 Cambodia,0
 Cameroon,0
 Central African Republic,0
@@ -39,13 +39,13 @@ Chile,0
 China,0
 Colombia,0
 Colorado,0
-Connecticut,0
+Connecticut,3
 Costa Rica,0
 Croatia,0
 Cuba,0
 Cyprus,0
 Czech Republic,0
-Delaware,0
+Delaware,3
 Democratic Republic of the Congo,0
 Denmark,0
 Djibouti,0
@@ -58,183 +58,183 @@ Equatorial Guinea,0
 Eritrea,0
 Estonia,0
 Ethiopia,0
-Falkland Islands,1
-Fiji,1
-Finland,1
-Florida,1
-France,1
-French Guiana,1
-French Southern and Antarctic Lands,1
-Gabon,1
-Gambia,1
-Georgia,1
-Georgia (Country),1
-Germany,1
-Ghana,1
-Greece,1
-Greenland,1
-Guatemala,1
-Guinea,1
-Guinea Bissau,1
-Guyana,1
-Haiti,1
-Hawaii,1
-Honduras,1
-Hungary,1
-Iceland,1
-Idaho,1
-Illinois,1
-India,1
-Indiana,1
-Indonesia,1
-Iowa,1
-Iran,1
-Iraq,1
-Ireland,1
-Israel,1
-Italy,1
-Ivory Coast,1
-Jamaica,1
-Japan,1
-Jordan,1
-Kansas,1
-Kazakhstan,1
-Kentucky,1
-Kenya,1
-Kosovo,1
-Kuwait,1
-Kyrgyzstan,1
-Laos,1
-Latvia,1
-Lebanon,1
-Lesotho,1
-Liberia,1
-Libya,1
-Lithuania,1
-Louisiana,1
-Luxembourg,1
-Macedonia,1
-Madagascar,1
-Maine,1
-Malawi,1
-Malaysia,1
-Mali,2
-Malta,2
-Manitoba,2
-Maryland,2
-Massachusetts,2
-Mauritania,2
+Falkland Islands,0
+Fiji,0
+Finland,0
+Florida,4
+France,0
+French Guiana,0
+French Southern and Antarctic Lands,0
+Gabon,0
+Gambia,0
+Georgia,4
+Georgia (Country),0
+Germany,0
+Ghana,0
+Greece,0
+Greenland,0
+Guatemala,0
+Guinea,0
+Guinea Bissau,0
+Guyana,0
+Haiti,0
+Hawaii,2
+Honduras,0
+Hungary,0
+Iceland,0
+Idaho,5
+Illinois,2
+India,0
+Indiana,2
+Indonesia,0
+Iowa,2
+Iran,0
+Iraq,0
+Ireland,0
+Israel,0
+Italy,0
+Ivory Coast,0
+Jamaica,0
+Japan,0
+Jordan,0
+Kansas,0
+Kazakhstan,0
+Kentucky,2
+Kenya,0
+Kosovo,0
+Kuwait,0
+Kyrgyzstan,0
+Laos,0
+Latvia,0
+Lebanon,0
+Lesotho,0
+Liberia,0
+Libya,0
+Lithuania,0
+Louisiana,4
+Luxembourg,0
+Macedonia,0
+Madagascar,0
+Maine,5
+Malawi,0
+Malaysia,0
+Mali,0
+Malta,0
+Manitoba,0
+Maryland,3
+Massachusetts,3
+Mauritania,0
 Mexico,2
 Michigan,2
 Minnesota,2
-Mississippi,2
+Mississippi,4
 Missouri,2
-Moldova,2
-Mongolia,2
-Montana,2
-Montenegro,2
-Morocco,2
-Mozambique,2
-Myanmar,2
-Namibia,2
+Moldova,0
+Mongolia,0
+Montana,5
+Montenegro,0
+Morocco,0
+Mozambique,0
+Myanmar,0
+Namibia,0
 Nebraska,2
-Nepal,2
-Netherlands,2
+Nepal,0
+Netherlands,0
 Nevada,2
-New Brunswick,2
-New Caledonia,2
-New Hampshire,2
-New Jersey,2
-New Mexico,2
-New York,2
-New Zealand,2
-Nicaragua,2
-Niger,2
-Nigeria,2
-North Carolina,2
+New Brunswick,0
+New Caledonia,0
+New Hampshire,5
+New Jersey,3
+New Mexico,0
+New York,3
+New Zealand,0
+Nicaragua,0
+Niger,0
+Nigeria,0
+North Carolina,3
 North Dakota,2
-North Korea,2
-Northern Cyprus,2
-Northwest Territories,2
-Norway,2
-Nova Scotia,2
-Nunavut,2
-Ohio,2
-Oklahoma,2
-Oman,2
-Ontario,2
-Oregon,2
-Pakistan,2
-Panama,2
-Papua New Guinea,2
-Paraguay,2
-Pennsylvania,2
-Peru,2
-Philippines,2
-Poland,2
-Portugal,2
-Prince Edward Island,2
-Puerto Rico,2
-Qatar,2
-Republic of Serbia,2
-Republic of the Congo,2
-Rhode Island,3
-Romania,3
-Russia,3
-Rwanda,3
-Saskatchewan,3
-Saudi Arabia,3
-Senegal,3
-Sierra Leone,3
-Slovakia,3
-Slovenia,3
-Solomon Islands,3
-Somalia,3
-Somaliland,3
-South Africa,3
-South Carolina,3
-South Dakota,3
-South Korea,3
-South Sudan,3
-Spain,3
-Sri Lanka,3
-Sudan,3
-Suriname,3
-Swaziland,3
-Sweden,3
-Switzerland,3
-Syria,3
-Taiwan,3
-Tajikistan,3
+North Korea,0
+Northern Cyprus,0
+Northwest Territories,0
+Norway,0
+Nova Scotia,0
+Nunavut,0
+Ohio,3
+Oklahoma,0
+Oman,0
+Ontario,0
+Oregon,5
+Pakistan,0
+Panama,0
+Papua New Guinea,0
+Paraguay,0
+Pennsylvania,3
+Peru,0
+Philippines,0
+Poland,0
+Portugal,0
+Prince Edward Island,0
+Puerto Rico,0
+Qatar,0
+Republic of Serbia,0
+Republic of the Congo,0
+Rhode Island,5
+Romania,0
+Russia,0
+Rwanda,0
+Saskatchewan,5
+Saudi Arabia,0
+Senegal,0
+Sierra Leone,0
+Slovakia,0
+Slovenia,0
+Solomon Islands,0
+Somalia,0
+Somaliland,0
+South Africa,0
+South Carolina,4
+South Dakota,2
+South Korea,0
+South Sudan,0
+Spain,0
+Sri Lanka,0
+Sudan,0
+Suriname,0
+Swaziland,0
+Sweden,0
+Switzerland,0
+Syria,0
+Taiwan,0
+Tajikistan,0
 Tennessee,3
-Texas,3
-Thailand,3
-The Bahamas,3
-Togo,3
-Trinidad and Tobago,3
-Tunisia,3
-Turkey,3
-Turkmenistan,3
-Uganda,3
-Ukraine,3
-United Arab Emirates,3
-United Kingdom,3
-United Republic of Tanzania,3
-Uruguay,3
-Utah,3
-Uzbekistan,3
-Vanuatu,3
-Venezuela,3
-Vermont,3
-Vietnam,3
+Texas,0
+Thailand,0
+The Bahamas,0
+Togo,0
+Trinidad and Tobago,0
+Tunisia,0
+Turkey,0
+Turkmenistan,0
+Uganda,0
+Ukraine,0
+United Arab Emirates,0
+United Kingdom,0
+United Republic of Tanzania,0
+Uruguay,0
+Utah,2
+Uzbekistan,0
+Vanuatu,0
+Venezuela,0
+Vermont,5
+Vietnam,0
 Virginia,3
-Washington,3
-West Bank,3
+Washington,5
+West Bank,0
 West Virginia,3
-Western Sahara,3
-Wisconsin,3
-Wyoming,3
-Yemen,3
-Yukon Territory,3
-Zambia,3
-Zimbabwe,3
+Western Sahara,0
+Wisconsin,2
+Wyoming,5
+Yemen,0
+Yukon Territory,0
+Zambia,0
+Zimbabwe,0
