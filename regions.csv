@@ -12,7 +12,7 @@ Arizona,2
 Arkansas,2
 Armenia,0
 Australia,16
-Austria,0
+Austria,15
 Azerbaijan,0
 Bangladesh,16
 Belarus,15
@@ -59,7 +59,7 @@ Eritrea,16
 Estonia,15
 Ethiopia,16
 Falkland Islands,0
-Fiji,0
+Fiji,16
 Finland,17
 Florida,4
 France,8
@@ -120,7 +120,7 @@ Malawi,16
 Malaysia,16
 Mali,16
 Malta,7
-Manitoba,0
+Manitoba,2
 Maryland,3
 Massachusetts,3
 Mauritania,16
@@ -129,7 +129,7 @@ Michigan,1
 Minnesota,1
 Mississippi,4
 Missouri,1
-Moldova,0
+Moldova,15
 Mongolia,16
 Montana,5
 Montenegro,7
@@ -141,9 +141,9 @@ Nebraska,2
 Nepal,16
 Netherlands,12
 Nevada,2
-Newfoundland and Labrador,0
+Newfoundland and Labrador,3
 New Brunswick,0
-New Caledonia,0
+New Caledonia,16
 New Hampshire,3
 New Jersey,3
 New Mexico,2
@@ -158,12 +158,12 @@ North Korea,16
 Northern Cyprus,7
 Northwest Territories,0
 Norway,12
-Nova Scotia,0
+Nova Scotia,3
 Nunavut,0
 Ohio,3
 Oklahoma,2
 Oman,16
-Ontario,0
+Ontario,1
 Oregon,5
 Pakistan,16
 Panama,6
@@ -177,7 +177,7 @@ Portugal,6
 Prince Edward Island,0
 Puerto Rico,0
 Qatar,16
-Quebec,0
+Quebec,3
 Republic of Serbia,7
 Republic of the Congo,16
 Rhode Island,3
@@ -190,7 +190,7 @@ Senegal,16
 Sierra Leone,16
 Slovakia,15
 Slovenia,7
-Solomon Islands,0
+Solomon Islands,16
 Somalia,16
 Somaliland,16
 South Africa,16
@@ -204,7 +204,7 @@ Sudan,16
 Suriname,6
 Swaziland,16
 Sweden,12
-Switzerland,0
+Switzerland,15
 Syria,16
 Taiwan,16
 Tajikistan,16
@@ -215,7 +215,7 @@ The Bahamas,0
 Togo,16
 Trinidad and Tobago,0
 Tunisia,7
-Turkey,0
+Turkey,16
 Turkmenistan,16
 Uganda,16
 Ukraine,15
@@ -225,7 +225,7 @@ United Republic of Tanzania,16
 Uruguay,6
 Utah,2
 Uzbekistan,16
-Vanuatu,0
+Vanuatu,16
 Venezuela,6
 Vermont,3
 Vietnam,16
