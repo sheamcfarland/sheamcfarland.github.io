@@ -194,6 +194,7 @@ function setTimerPhone(what) {
 function sendItOffPhone() {
     what = document.getElementById("phone").value;
     document.getElementById('phonelink').innerText = what
+    document.getElementById('phonelink').href = "tel:" + what
 }
 
 function setTimerMobile(what) {
@@ -203,6 +204,7 @@ function setTimerMobile(what) {
 function sendItOffMobile() {
     what = document.getElementById("mobile").value;
     document.getElementById('mobilelink').innerText = what
+    document.getElementById('mobilelink').href = "tel:" + what
 }
 
 function setTimerEmail(what) {
